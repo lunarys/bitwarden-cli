@@ -1,6 +1,6 @@
 FROM alpine:latest AS downloader
 
-ARG BW_VERSION=2025.6.1
+ARG BW_VERSION=2025.8.0
 
 RUN apk update --no-cache \
  && apk add --no-cache curl jq \
