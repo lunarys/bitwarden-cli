@@ -14,6 +14,8 @@ RUN apk update --no-cache \
 
 FROM debian:sid
 
+RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
+
 COPY --from=downloader bw /usr/local/bin/
 
 USER 1000
